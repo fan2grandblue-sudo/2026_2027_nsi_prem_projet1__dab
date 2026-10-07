@@ -35,23 +35,7 @@ def convertisseur ():
         montant = montant - 1
     monnaie.append(nb1)
 
-    if nb50 == 0 : # afin d'enlever les billets affichés s'ils n'y en a pas qui sont rendus pour chaque type
-         monnaie.remove(nb50)
-    if nb20 == 0 :
-        monnaie.remove(nb20)
-    if nb10 == 0 :
-        monnaie.remove(nb10)
-    if nb5 == 0 :
-        monnaie.remove(nb5)
-    if nb2 == 0 :
-        monnaie.remove(nb2)
-    if nb1 == 0 :
-        monnaie.remove(nb1)
-
-    
-    for i in range (len(monnaie)) :
-        print(monnaie[i])
-
+    print (monnaie)
 
     #return monnaie
 
