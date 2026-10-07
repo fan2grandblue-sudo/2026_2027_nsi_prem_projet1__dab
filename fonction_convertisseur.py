@@ -1,6 +1,5 @@
 from math import floor
 
-
 def convertisseur ():
     nb50 = 0 # nombre de billets qui se trouveront dans la conversion
     nb20 = 0
@@ -41,3 +40,4 @@ def convertisseur ():
     #return monnaie
 
 print (convertisseur ())
+
