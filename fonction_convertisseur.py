@@ -8,7 +8,7 @@ def convertisseur ():
     nb2 = 0
     nb1 = 0
     monnaie = []
-    montant = int(input("Quel montant veux-tu prélever ? ")) # demande au user de rentrer la somme d'argent qu'il veut convertir en billets et pièces
+    montant = int(input("\n\nQuel montant veux-tu prélever ? ")) # demande au user de rentrer la somme d'argent qu'il veut convertir en billets et pièces
     
     for i in range (floor(montant / 50 )) : # permet de soustraire un nombre de billets de 50 € dépendant du montant
         nb50 = nb50 + 1 # ajoute 1 au nombre de billets de 50 € dans la conversion
@@ -34,8 +34,24 @@ def convertisseur ():
         nb1 = nb1 + 1 
         montant = montant - 1
     monnaie.append(nb1)
+
+    if nb50 == 0 : # afin d'enlever les billets affichés s'ils n'y en a pas qui sont rendus pour chaque type
+         monnaie.remove(nb50)
+    if nb20 == 0 :
+        monnaie.remove(nb20)
+    if nb10 == 0 :
+        monnaie.remove(nb10)
+    if nb5 == 0 :
+        monnaie.remove(nb5)
+    if nb2 == 0 :
+        monnaie.remove(nb2)
+    if nb1 == 0 :
+        monnaie.remove(nb1)
+
     
-    print (f"\nCela vous donne :\n\n{nb50} billet(s) de 50€. \n{nb20} billet(s) de 20€. \n{nb10} billet(s) de 10€. \n{nb5} billet(s) de 5€. \n{nb2} pièce(s) de 2€. \n{nb1} pièce(s) de 1€. ")
+    for i in range (len(monnaie)) :
+        print(monnaie[i])
+
 
     #return monnaie
 
