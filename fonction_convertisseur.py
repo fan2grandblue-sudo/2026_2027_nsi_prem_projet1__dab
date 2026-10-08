@@ -35,9 +35,40 @@ def convertisseur ():
         montant = montant - 1
     monnaie.append(nb1)
 
-    print (monnaie)
+    print ("Voici votre monnaie :\n")
 
-    #return monnaie
+    if nb50 == 1 :
+        print ("1 billet de 50 €") # pour faire en sorte que ça affiche "billet" sans "s" puisque qu'il n'y en a qu'un seul
+    elif nb50 > 1 :
+        print (f"{nb50} billets de 50 €") # pour faire en sorte de ne pas afficher de billets rendus s'il n'y en a pas
 
-print (convertisseur ())
+    if nb20 == 1 :
+        print ("1 billet de 20 €")
+    elif nb20 > 1 :
+        print (f"{nb20} billets de 20 €")
+
+    if nb10 == 1 :
+        print ("1 billet de 10 €")
+    elif nb10 > 1 :
+        print (f"{nb10} billets de 10 €")
+
+    if nb5 == 1 :
+        print ("1 pièce de 5 €")
+    elif nb5 > 1 :
+        print (f"{nb5} pièces de 5 €")
+
+    if nb2 == 1 :
+        print ("1 pièce de 2 €")
+    elif nb2 > 1 :
+        print (f"{nb2} pièces de 2 €")
+
+    if nb1 == 1 :
+        print ("1 pièce de 1 €")
+    elif nb1 > 1 :
+        print (f"{nb1} pièces de 1 €")
+
+    
+    
+
+convertisseur ()
 
