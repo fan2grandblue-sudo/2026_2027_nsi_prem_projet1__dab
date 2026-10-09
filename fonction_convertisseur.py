@@ -65,7 +65,7 @@ def convertisseur ():
     elif nb1 > 1 :
         print (f"{nb1} pièces de 1 €")
 
-    print ("\n")
+    print ("\n") # pour une question d'esthétique, afin de ne pas coller le texte à la suite de la conversion
 
     
     
