@@ -15,7 +15,7 @@ def show_me_the_money (account):
 
 
 def register_or_login ():
-    sign_in = input ("Already have an account ? : ").lower()
+    sign_in = input ("\nAlready have an account ? : ").lower()
     if sign_in == "yes" or sign_in == "of course" or sign_in == "already have one" or sign_in == "for sure" or sign_in == "yep":
         login ()
     else:
@@ -54,5 +54,3 @@ def login():
     
 
 register_or_login ()
-
-
