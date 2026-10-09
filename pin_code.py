@@ -6,16 +6,16 @@ accounts = {"fan2riasgremory" : {"PIN" :"995890", "Solde" : 45854},
 def show_me_the_money (account):
     balance = input ("Show me the money ? : ").lower()
     if balance in ["yes", "of course", "show me the money", "show me my money", "for sure", "yep"]:
-        print (accounts[account]["Solde"], "€")
+        print(accounts[account]["Solde"], "€")
         
-    elif balance == "balance unlimited".lower():
+    elif balance == "balance unlimited":
         accounts[account]["Solde"] = 9999999999999999
         print(accounts[account]["Solde"], "€")
 
 
 
 def register_or_login ():
-    sign_in = input ("Already have an account ? : ")
+    sign_in = input ("Already have an account ? : ").lower()
     if sign_in == "yes" or sign_in == "of course" or sign_in == "already have one" or sign_in == "for sure" or sign_in == "yep":
         login ()
     else:
