@@ -16,7 +16,7 @@ def convertisseur ():
     while montant > 1000 :
         print ("\n\nLe montant doit être compris entre 1 et 1000.")
         montant = int(input("Quel montant voulez-vous prélever ? "))
-    
+
     
     for i in range (floor(montant / 50 )) : # permet de soustraire un nombre de billets de 50 € dépendant du montant
         nb50 = nb50 + 1 # ajoute 1 au nombre de billets de 50 € dans la conversion
