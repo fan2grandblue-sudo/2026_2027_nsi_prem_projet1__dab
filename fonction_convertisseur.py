@@ -16,7 +16,10 @@ def converter ():
     while amount > 1000 :
         print ("\n\nThe amount must be between 1 and 1000.")
         amount = int(input("How much do you want to withdraw ? "))
-
+    while amount is float : # le programme redemande de rentrer un montant tant que celui-ci n'est pas un entier
+        print ("\n\nThe amount must be an integer.")
+        amount = int(input("How much do you want to withdraw ? "))
+        
     
     for i in range (floor(amount / 50 )) : # permet de soustraire un nombre de billets de 50 € dépendant du montant
         nb50 = nb50 + 1 # ajoute 1 au nombre de billets de 50 € dans la conversion
