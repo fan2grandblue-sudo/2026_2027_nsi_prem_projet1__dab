@@ -38,7 +38,7 @@ def register():
 
 def login():
     count_false = 1
-    while count_false<=3:
+    while count_false <= 3 :
         account = input("Name account : ")
         PIN = input("PIN : ")
         if account in accounts and accounts[account]["PIN"] == PIN:
