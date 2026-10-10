@@ -33,7 +33,7 @@ def register():
     else:
         PIN = input("Choose a PIN : ")
         accounts[account] = {"PIN": PIN, "Solde": 0}
-        print("Account created")
+        print("\nAccount created")
         register_or_login ()
 
 
@@ -41,10 +41,10 @@ def register():
 def login():
     count_false = 1
     while count_false <= 3 :
-        account = input("Name account : ")
+        account = input("\nName account : ")
         PIN = input("PIN : ")
         if account in accounts and accounts[account]["PIN"] == PIN:
-            print("Login successful")
+            print("\nLogin successful")
             show_me_the_money (account)
             return
         else:
