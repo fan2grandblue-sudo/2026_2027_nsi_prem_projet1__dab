@@ -10,7 +10,7 @@ SAVKIN Matvey
 * UPDATE 9 OCT. 2026
 Main : fichier a executer
 Fonction_convertisseur :
-- convertisseur(a) : prend le montant a en entree, et retourne ce montant decompose en nombre de billets et pieces optimal
+- convertisseur(a) : prend le montant a en entree, et retourne ce montant decompose en nombre de billets optimal
 Pin_code :
 - show_me_the_money(account) : prend le nom d'un compte (string) en entree, et affiche la solde si demande
 - register_or_log_in() : demande si compte existe deja : si oui, renvoie sur login() ; si non, renvoie sur register()
